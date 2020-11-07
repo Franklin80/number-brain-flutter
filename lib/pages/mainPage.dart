@@ -12,10 +12,10 @@ class MainPage extends StatelessWidget {
       body: Center(
         child: RaisedButton(
           child: Text(
-            'To the topics!',
+            'To the game!',
           ),
           onPressed: () {
-            Navigator.pushNamed(context, 'topicListPage');
+            Navigator.pushNamed(context, 'gamePage');
           },
         ),
       ),
