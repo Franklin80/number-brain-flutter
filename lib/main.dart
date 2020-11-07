@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import './pages/mainPage.dart';
+import './pages/topicListPage.dart';
+import './pages/lessonListPage.dart';
+
 void main() => runApp(NumberBrainApp());
 
 class NumberBrainApp extends StatelessWidget {
@@ -7,23 +11,11 @@ class NumberBrainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'NumberBrain',
-      home: StartPage(),
-    );
-  }
-}
-
-class StartPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'Number Brain Game',
-        ),
-      ),
-      body: Center(
-        child: Text('Number Brain Game'),
-      ),
+      routes: <String, WidgetBuilder>{
+        'topicListPage': (context) => TopicListPage(),
+        'lessonListPage': (context) => LessonListPage()
+      },
+      home: MainPage(),
     );
   }
 }
