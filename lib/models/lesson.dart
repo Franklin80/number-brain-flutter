@@ -17,7 +17,7 @@ class Lesson {
   String topicId;
 
   Lesson(
-      this.id,
+      {this.id,
       this.header,
       this.subheader,
       this.description,
@@ -27,5 +27,5 @@ class Lesson {
       this.time,
       this.hint,
       this.tasks,
-      this.topicId);
+      this.topicId});
 }

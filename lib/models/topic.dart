@@ -10,12 +10,11 @@ class Topic {
   List<Lesson> lessons;
 
   Topic(
-    this.id,
-    this.header,
-    this.subheader,
-    this.description,
-    this.imageBigUri,
-    this.imageSmallUri,
-    this.lessons,
-  );
+      {this.id,
+      this.header,
+      this.subheader,
+      this.description,
+      this.imageBigUri,
+      this.imageSmallUri,
+      this.lessons});
 }

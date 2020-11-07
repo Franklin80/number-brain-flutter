@@ -1,6 +1,8 @@
+import './answer.dart';
+
 class Task {
   String question;
-  List<Map<String, bool>> answers;
+  List<Answer> answers;
 
-  Task(this.question, this.answers);
+  Task({this.question, this.answers});
 }
